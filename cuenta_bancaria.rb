@@ -5,7 +5,6 @@ class CuentaBancaria
       @numero_cuenta = numero_cuenta
       raise RangeError, "El numero de cuenta no puede exceder de 8 digitos" if @numero_cuenta.digits.count > 8 
       @vip = vip
-
     end
 
     def numero_de_cuenta
@@ -14,5 +13,5 @@ class CuentaBancaria
     end
 end
 
-acc = CuentaBancaria.new('user',123456789) 
+acc = CuentaBancaria.new('user', 12345678) 
 puts acc.numero_de_cuenta

@@ -1,7 +1,7 @@
 class Carta
     attr_accessor :numero, :pinta
     def initialize()
-	@numero = rand(1..13)
+	@numero = rand(1..12)
 	@pinta= ['C', 'D', 'E', 'T'].sample
     end
 end
